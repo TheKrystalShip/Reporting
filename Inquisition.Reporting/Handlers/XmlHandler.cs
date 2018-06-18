@@ -8,22 +8,24 @@ namespace Inquisition.Reporting.Handlers
 {
     internal static class XmlHandler
     {
+        private static XmlSerializer _serializer;
+
         public static void Serialize<T>(T report) where T : class, IReport
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            _serializer = new XmlSerializer(typeof(T));
             using (TextWriter writer = new StreamWriter(report.Path))
             {
-                serializer.Serialize(writer, report);
+                _serializer.Serialize(writer, report);
             }
         }
 
         public static T Deserialize<T>(string path) where T : class
         {
             object toReturn;
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            _serializer = new XmlSerializer(typeof(T));
             using (StringReader reader = new StringReader(path))
             {
-                toReturn = serializer.Deserialize(reader);
+                toReturn = _serializer.Deserialize(reader);
             }
             return (T)toReturn;
         }
