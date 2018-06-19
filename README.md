@@ -1,3 +1,7 @@
+![NuGet](https://img.shields.io/nuget/dt/Inquisition.Reporting.svg) ![NuGet](https://img.shields.io/nuget/v/Inquisition.Reporting.svg)
+
+[NuGet package](https://www.nuget.org/packages/Inquisition.Reporting/)
+
 # Inquisition.Reporting
 
 Library to create XML files from Exceptions with the posibility to also send the report via Email.
