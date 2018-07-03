@@ -1,6 +1,8 @@
-![NuGet](https://img.shields.io/nuget/dt/Inquisition.Reporting.svg) ![NuGet](https://img.shields.io/nuget/v/Inquisition.Reporting.svg)
+![Downloads](https://img.shields.io/nuget/dt/Inquisition.Reporting.svg)
+![Version](https://img.shields.io/nuget/v/Inquisition.Reporting.svg)
+[![Build status](https://ci.appveyor.com/api/projects/status/gauy3tunk9c7p6pr?svg=true)](https://ci.appveyor.com/project/Flysenberg/inquisition-reporting)
 
-[NuGet package](https://www.nuget.org/packages/Inquisition.Reporting/)
+[Manual NuGet package download](https://www.nuget.org/packages/Inquisition.Reporting/)
 
 # Inquisition.Reporting
 
